@@ -1,9 +1,19 @@
 /*
- This program takes in a text file, in this case a text file containing the lyrics to 
-Dua Lupa's lyrics for her song "New Rules", and reads the file, copies the file and counts the lines 
-of lyrics in the file. The file also has methods that show how to write into or create new files. The end goal is 
-to produce a method that will be able to manipulate the original file contents so that some lyrics are replaced and written 
-to a new file with "corrected" lyrics.z  
+File Handling Project
+by Lakshmi Shaji
+
+This project utilizes the FileReader and FileWriter classes in Java to tackle file handling tasks.
+The program takes in a text file, in this case a text file containing the lyrics to Dua Lupa's lyrics for her song 
+"New Rules", and carries out various tasks that allow a user to do the following tasks: 
+
+1. Read the contents of the file. 
+2. Create a new file and write some contents into the file. 
+3. Get some property or aspect of the file using java method. (In this project, the number of lines in the file). 
+4. Copy the contents of the original file to another file. 
+5. Manipulate the data in the file to overwirte the content and create new "corrected file". 
+
+
+In this project, the corrected file includes the removal of dialectal variations and chosen contractions and replacing them with words shown below. Finally, the corrected lyrics are sent to a newly created file. 
 
 Corrections to look for based on changes made in the manipulateFile method: 
 
@@ -19,6 +29,8 @@ Three --> 3
 'em --> them  
 I've --> I have 
 Don't --> Do not
+
+
  */
 package read_write;
 
@@ -43,6 +55,8 @@ public class Read_write {
      * @param args the command line arguments
      * @throws java.io.IOException
      */
+    
+    //This method simply read the contents of the file and display them on the console.
     public static void readFile(String fileName) throws IOException {
         String lyric;
         try {
@@ -59,6 +73,7 @@ public class Read_write {
         }
     }
 
+    //This method will write a pre-defined string into a newly created file. 
     public static void writeFile(String fileContent, String createFileName) {
         try {
 
@@ -76,6 +91,9 @@ public class Read_write {
         }
     }
 
+    /*This method will count the number of lines that are in the file based on the filename passed in as a parameter. 
+    NOTE: This method does count spaces between lines as lines. 
+    */
     public static void countLinesInFile(String filename) {
         try {
             File songLyrics = new File(filename);
@@ -95,7 +113,8 @@ public class Read_write {
         }
 
     }
-
+    
+// This method will copy the contents of a file that is passed in to a newly created text file. 
     public static void copyFile(String fileName, String copyFileName) throws IOException {
 
         try {
@@ -120,6 +139,7 @@ public class Read_write {
         }
     }
 
+//This method will manipulate the original file contnets based on the implemented rules and write the new data into a newly created file. 
     public static void manipulateFile(String fileName, String correctedFile) throws FileNotFoundException, IOException {
 
             File originalLyrics = new File(fileName); 
