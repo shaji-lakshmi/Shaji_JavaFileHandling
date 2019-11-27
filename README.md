@@ -17,29 +17,17 @@ Corrections to look for based on changes made in the manipulateFile method:
 Original Lyric  | Corrected Lyric
 --------------- | ---------------
 talkin'| talking 
-Content Cell  | Content Cell
+makin'   | making
+hopin'   | hoping
+pushin'   | pushing
+pullin'  | pulling
+ain't   | are not
+One   | 1
+Two  | 2
+Three | 3
+'em | them
+I've | I have 
+Don't | Do not
 
- --> 
 
-makin' --> making 
-
-hopin' --> hoping 
-
-pushin' --> pushing 
-
-pullin' --> pulling
-
-ain't --> are not 
-
-One --> 1
-
-Two --> 2
-
-Three --> 3
-
-'em --> them  
-
-I've --> I have 
-
-Don't --> Do not
 
