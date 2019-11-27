@@ -15,15 +15,26 @@ In this project, the corrected file includes the removal of dialectal variations
 Corrections to look for based on changes made in the manipulateFile method: 
 
 talkin' --> talking 
+
 makin' --> making 
+
 hopin' --> hoping 
+
 pushin' --> pushing 
+
 pullin' --> pulling
+
 ain't --> are not 
+
 One --> 1
+
 Two --> 2
+
 Three --> 3
+
 'em --> them  
+
 I've --> I have 
+
 Don't --> Do not
 
