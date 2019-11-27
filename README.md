@@ -14,7 +14,12 @@ In this project, the corrected file includes the removal of dialectal variations
 
 Corrections to look for based on changes made in the manipulateFile method: 
 
-talkin' --> talking 
+Original Lyric  | Corrected Lyric
+--------------- | ---------------
+talkin'| talking 
+Content Cell  | Content Cell
+
+ --> 
 
 makin' --> making 
 
